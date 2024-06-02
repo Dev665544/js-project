@@ -1,0 +1,43 @@
+const Patient = [];
+function adding(name,age,gender,disease,email,address,doctor_name){
+    var metadata = 
+    {
+        "name" : name,
+        "age" : age,
+        "gender" : gender,
+        "disease" : disease,
+        "email" : email,
+        "address" :address,
+        "doctor_name" : doctor_name,
+    };
+    Patient.push(metadata);
+}
+function print()
+{
+    let i = 0;
+    while(i<Patient.length)
+    {
+        console.log("\nNumber is : " , i+1);
+        console.log("name is : " , Patient[i]["name"]);
+        console.log("Age is : " , Patient[i]["age"]);
+        console.log("Gender is : " , Patient[i]["gender"]);
+        console.log("disease is : " , Patient[i]["disease"]);
+        console.log("email address of student is : " , Patient[i]["email"]);
+        console.log("Address is : " , Patient[i]["address"]);
+        console.log("doctor_name is : " , Patient[i]["doctor_name"]);
+        i++;
+    }
+}
+function count()
+{
+    console.log("\nNumber of patient in ward is : " , Patient.length);
+}
+adding("GAURAV","19","MALE","Tuber","xyz@hotmail.com","Kharar","BABBAR");
+adding("ANUJ","19","MALE","loose notion","anujyadav@gmail.com","Keval","KUNSH");
+adding("RAGHAV","18","MALE","fever","9574861320","raghavbajaj2718@gmail.com","Karnal","BABBAR");
+adding("HARSH","20","MALE","dangue","harshksharma@gmail.com","Kanpur","KUNSH");
+adding("PARAG","17","MALE","malaria","tuhihai@gmail.com","Karnal","KUNSH");
+adding("Mayank","16","MALE","HLAV 27","tuhihai@gmail.com","Kachhwa","BABBAR");
+adding("Dev","16","MALE","typhoid","ccdsv@gmail.com","Kachhwa","KUNSH");
+print();
+count();
